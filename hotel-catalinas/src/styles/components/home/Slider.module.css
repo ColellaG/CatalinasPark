@@ -1,0 +1,33 @@
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 800px; /* Ajusta según sea necesario */
+  margin: auto;
+  overflow: hidden; /* Oculta el desbordamiento */
+}
+
+.sliderContent {
+  position: relative;
+}
+
+.slide {
+  width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.sliderText {
+  position: absolute;
+  top: 50%; /* Centra verticalmente */
+  left: 50%; /* Centra horizontalmente */
+  transform: translate(-50%, -50%); /* Ajusta la posición para centrar */
+  color: white; /* Cambia el color del texto según el fondo */
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para mejorar la legibilidad */
+  padding: 10px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  opacity: 0; /* Inicialmente oculto para la animación */
+  transition: opacity 0.5s ease; /* Transición suave para el fade-out */
+}
+
+.sliderText.show {
+  opacity: 1; /* Muestra el texto */
+}

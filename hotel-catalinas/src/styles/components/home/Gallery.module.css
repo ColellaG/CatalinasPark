@@ -1,0 +1,40 @@
+.gallery {
+  display: flex; 
+  align-items: flex-start;
+  margin: 0.5em;
+}
+
+.largeImage {
+  width: 60%;
+  
+  height: 465px;
+  margin: 0.5rem; 
+}
+
+.largeImage img {
+  width: 100%; 
+  height: 100%; 
+  border-radius: 8px; 
+}
+
+.smallImages {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem; 
+  margin: 0.5rem;
+  width: 500px;
+}
+
+.smallImage {
+  width: 229px; 
+  height: 229px; 
+  overflow: hidden; 
+  border-radius: 8px; 
+}
+
+.smallImage img {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+  display: block;
+}
